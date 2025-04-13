@@ -50,6 +50,49 @@ nav ul li a {
     text-decoration: none;
 }
 
+
+
+
+/* 媒体查询，当屏幕宽度小于768px时 */
+@media (max-width: 768px) {
+
+    /* 头部样式 */
+    header {
+        padding: 10px 0;
+    }
+
+
+    nav ul li {
+        margin: 5px 0; /* 调整导航项的间距 */
+    }
+
+    /* 主体样式 */
+    main {
+        padding: 20px;
+    }
+
+    /* 表单样式 */
+    form {
+        width: 100%; /* 使表单宽度适应屏幕宽度 */
+    }
+
+    /* 标题和信息的样式 */
+    .title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .info {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+
+
+
+
+
 /* 主体样式 */
 
 .welcome {
