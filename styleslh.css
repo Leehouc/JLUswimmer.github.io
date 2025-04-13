@@ -180,6 +180,7 @@ input[type="submit"]:hover {
     display: block;
     width: 90%;
     height: auto;
+    margin: 0 auto;
     -webkit-transition: all 0.4s linear 0s;
     -moz-transition: all 0.4s linear 0s;
     -o-transition: all 0.4s linear 0s;
@@ -305,10 +306,11 @@ input[type="submit"]:hover {
 
 
 
-.title { font-size: 16px; font-weight: 500; line-height: 30px; color: #000000; text-align: left; }
-.title:hover { color: #015abe; }
 
-.info { font-size: 14px; font-weight: 500; line-height: 25px; color: #666; text-align: justify; }
+.title { font-size: 40px; font-weight: 500; line-height: 50px; color: 
+    #000000; text-align: left; }
+    .title:hover { color: #015abe; }
+.info { font-size: 30px; font-weight: 500; line-height: 26px; color: #666; text-align: justify; }
 
 .titlelh { font-size: 60px; font-weight: 800; line-height: 70px; color: #387d9f; text-align: left; }
 .titlelhll { font-size: 50px; font-weight: 800; line-height: 60px; color: #000000; text-align: left; }
@@ -319,10 +321,6 @@ input[type="submit"]:hover {
         width: 95%; /* 在竖屏模式下，宽度为100% */
         max-width: 95%; /* 最大宽度为100% */
     }
-    .title { font-size: 40px; font-weight: 500; line-height: 50px; color: 
-        #000000; text-align: left; }
-
-    .info { font-size: 30px; font-weight: 500; line-height: 26px; color: #666; text-align: justify; }
 
 
 }
