@@ -82,17 +82,10 @@
         </section>
 
 
-
-
-
         <section class="leeho">
             <h2>最新话题</h2>
             <!-- 这里可以动态加载最新话题的内容 -->
         </section>
-
-
-
-
 
 
     </main>
@@ -102,26 +95,6 @@
 
     </footer>
 
-    <script>
-        function adjustMaxWidth() {
-            var element = document.querySelector('.leeho');
-            if (window.innerHeight > window.innerWidth) {
-                // 竖屏
-                element.classList.remove('leeho-landscape');
-                element.classList.add('leeho-portrait');
-            } else {
-                // 横屏
-                element.classList.remove('leeho-portrait');
-                element.classList.add('leeho-landscape');
-            }
-        }
-
-        // 当页面加载完成时调整宽度
-        window.onload = adjustMaxWidth;
-
-        // 当窗口大小改变时调整宽度
-        window.onresize = adjustMaxWidth;
-    </script>
 
     <script>
         function displayScreenWidth() {
