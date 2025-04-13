@@ -96,6 +96,21 @@ nav ul li a {
 }
 
 
+.leehooutofv {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* 默认宽度为100%，随设备宽度变化 */
+    /*max-width: 500px; /* 最大宽度为600px，超过这个宽度不再变化 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 使框居中显示 */
+}
+
+
 
 
 

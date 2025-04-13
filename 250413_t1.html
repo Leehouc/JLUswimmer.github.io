@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>吉大泳协 - 首页</title>
+    <link rel="stylesheet" href="styleslh.css"> <!-- 链接到统一的CSS文件 -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 引入Slick滑块插件的CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- 引入Slick滑块插件的JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="usinfo.html">关于我们</a></li>
+                <li><a href="er.html">兼容测试</a></li>
+                <li><a href="baoming.html">志愿者报名</a></li>
+                
+                <!--<li><a href="reply_topic.html">回复话题</a></li>-->
+     </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <a class="titlelh" >欢迎来到吉林大学吉大泳协！</a>
+            <p>c测试：dev8311</p>
+        </section>
+
+
+        <section class="leehoofofv">
+            
+
+            <p class="infote tt1">  &ensp;&ensp;&ensp;   编点 </p>
+            <p class="infote tt1">  &ensp;&ensp;&ensp;    </p>
+            
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 吉大泳协</p>
+            <p>屏幕宽度: <span id="screenWidth"></span> pxl  ,屏幕高度: <span id="screenHeight"></span> pxl</p>
+
+    </footer>
+
+
+    <script>
+        function displayScreenWidth() {
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            document.getElementById('screenWidth').textContent = width;
+            document.getElementById('screenHeight').textContent = height;
+        }
+
+        // 当页面加载完成时显示屏幕宽度
+        window.onload = displayScreenWidth;
+
+        // 当窗口大小改变时更新屏幕宽度
+        window.onresize = displayScreenWidth;
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.news-slick').slick({
+                // Slick滑块配置选项
+                autoplay: true, // 自动播放
+                dots: true, // 显示圆点导航
+                arrows: true, // 显示箭头导航
+                infinite: true, // 无限循环
+                speed: 300, // 滑动速度
+                slidesToShow: 1, // 同时显示的滑块数量
+                slidesToScroll: 1 // 每次滑动的滑块数量
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
