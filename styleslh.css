@@ -85,9 +85,7 @@ nav ul li a {
     margin-right: auto; /* 使框居中显示 */
   }
   
-  /* 媒体查询，当屏幕宽度小于某个值时，例如768px */
-  
-  
+
 
 
 
@@ -327,6 +325,6 @@ input[type="submit"]:hover {
 @media screen and (orientation:landscape){
     .leeho {
         width: 60%; /* 在横屏模式下，宽度为100% */
-        max-width: 60%; /* 最大宽度为100% */
+        max-width: 500px; /* 最大宽度为100% */
     }
 }
