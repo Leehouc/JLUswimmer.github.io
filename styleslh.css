@@ -277,9 +277,9 @@ input[type="submit"]:hover {
 /* 为箭头添加自定义样式 */
 .news-slick .slick-prev,
 .news-slick .slick-next {
-    width: 30px;
+    width: 40px;
     /* 调整箭头的宽度 */
-    height: 30px;
+    height: 40px;
     /* 调整箭头的高度 */
     z-index: 1;
     /* 确保箭头在滑块上方 */
@@ -313,10 +313,10 @@ input[type="submit"]:hover {
 /* 可选：为箭头添加背景和边框 */
 .news-slick .slick-prev,
 .news-slick .slick-next {
-    background: #fff;
+    background: #c1c0c0;
     /* 箭头背景颜色 */
 
-    border: 1px solid #ccc;
+    border: 1px solid #727171;
     /* 箭头边框 */
     border-radius: 50%;
     /* 使箭头背景呈圆形 */
