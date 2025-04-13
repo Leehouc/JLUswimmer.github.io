@@ -90,6 +90,23 @@
             <!-- 这里可以动态加载最新话题的内容 -->
         </section>
 
+        
+<p>屏幕宽度: <span id="screenWidth"></span> pixels</p>
+
+<script>
+  function displayScreenWidth() {
+    var width = window.innerWidth;
+    document.getElementById('screenWidth').textContent = width;
+  }
+
+  // 当页面加载完成时显示屏幕宽度
+  window.onload = displayScreenWidth;
+
+  // 当窗口大小改变时更新屏幕宽度
+  window.onresize = displayScreenWidth;
+</script>
+
+
 
     </main>
     <!--<footer>
