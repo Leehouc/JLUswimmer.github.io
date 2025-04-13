@@ -24,7 +24,7 @@
                 <li><a href="index.html">首页</a></li>
                 <li><a href="usinfo.html">关于我们</a></li>
                 <li><a href="er.html">兼容测试</a></li>
-                <li><a href="post_topic.html">志愿者报名</a></li>
+                <li><a href="baoming.html">志愿者报名</a></li>
                 <!--<li><a href="reply_topic.html">回复话题</a></li>-->
      </ul>
         </nav>
@@ -32,11 +32,100 @@
     <main>
         <section class="welcome">
             <a class="titlelh" >这里是吉林大学游泳锦标赛志愿者报名系统</a>
-            <p>还没做接收哈，，，，，表单白填hhh</p>
+            <p>这个别玩，刚开搞还没做接收哈，，，，，表单白填hhh</p>
+        </section>
+        <p>写点介绍啥的</p>
+        <section class="leeho">
+           
+
+
         </section>
 
         <section class="leeho">
-           
+        
+            <a class="titlelhll" >报名表单</a>
+
+            <form action="/register" method="POST">
+
+            <label for="username">姓名:</label>
+            <input type="text" id="username" name="username" required>
+
+
+            <label for="password">密码：</label>
+            <div class="tooltip">
+                <input type="password" id="password" name="password" required>
+                <span class="tooltiptext">密码格式要求：<br>1. 至少8个字符<br>2. 包含大小写字母<br>3. 包含数字</span>
+                <div id="passwordStrength" class="password-strength"></div>
+            </div>
+
+            <label for="number">电话号:</label>
+            <input type="text" id="number" name="number" required>
+
+            <label for="QQn">QQ号:</label>
+            <input type="text" id="QQn" name="QQn" required>
+
+
+            <label for="nickname">学号:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+
+            <div class="form-group">
+                <label for="college">学院:</label>
+                <select id="college" name="college" required>
+                    <option value="">请选择学院</option>
+                    <option value="engineering">计算机科学与技术学院</option>
+                    <option value="engineering">瞎写的，以后改</option>
+                    <option value="science">理学院</option>
+                    <option value="medicine">医学院</option>
+                    <option value="arts">文学院</option>
+                    <option value="business">商学院</option>
+                    <option value="law">法学院</option>
+                    <option value="education">教育学院</option>
+                    <option value="agriculture">农学院</option>
+                    <option value="architecture">建筑学院</option>
+                    <option value="informatics">信息学院</option>
+                    <option value="environment">环境学院</option>
+                    <option value="pharmacy">药学院</option>
+                    <option value="nursing">护理学院</option>
+                    <option value="music">音乐学院</option>
+                    <option value="finearts">美术学院</option>
+                    <option value="sports">体育学院</option>
+                    <option value="foreignlanguages">外国语学院</option>
+                    <option value="communication">传播学院</option>
+                    <option value="socialsciences">社会科学学院</option>
+                    <option value="humanities">人文学院</option>
+                    <option value="internationalrelations">国际关系学院</option>
+                    <option value="publicadministration">公共管理学院</option>
+                    <option value="economics">经济学院</option>
+                    <option value="management">管理学院</option>
+                    <option value="tourism">旅游学院</option>
+                    <option value="marine">海洋学院</option>
+                    <option value="aerospace">航空航天学院</option>
+                    <option value="materials">材料学院</option>
+                    <option value="energy">能源学院</option>
+                    <option value="mechanical">机械学院</option>
+                    <option value="electrical">电气学院</option>
+                    <option value="computer">计算机学院</option>
+                    <option value="software">软件学院</option>
+                    <option value="chemical">化学学院</option>
+                    <option value="biological">生物学院</option>
+                    <option value="geological">地质学院</option>
+                    <option value="meteorological">气象学院</option>
+                    <option value="mathematics">数学学院</option>
+                    <option value="physics">物理学院</option>
+                    <option value="chemistry">化学学院</option>
+                    <!-- 可以根据实际情况继续添加更多学院选项 -->
+                </select>
+
+
+
+            </div>
+
+
+
+
+            <input type="submit" value="注册">
+        </form>
 
 
         </section>
