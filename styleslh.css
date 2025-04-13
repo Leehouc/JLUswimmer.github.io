@@ -86,8 +86,9 @@ nav ul li a {
   }
   
   /* 媒体查询，当屏幕宽度小于某个值时，例如768px */
-  @media (max-width: 468px) {
+  @media (max-width: 700px) {
     .leeho {
+      max-width: 700px;
       padding: 10px; /* 在小屏幕上减少内边距 */
       margin-top: 10px; /* 在小屏幕上减少上外边距 */
       /* 其他样式可以根据需要调整 */
