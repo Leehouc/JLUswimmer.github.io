@@ -22,27 +22,12 @@ header {
     z-index: 1000; /* 确保导航栏在其他内容之上 */
 }
 
+/* 主体样式 */
 main {
     flex: 1;
-    padding: 4vw; /* 使用视口宽度单位，使内边距随屏幕宽度变化 */
+    padding: 20px;
     background: linear-gradient(45deg, #c9fbf9, #fbd0ed);
     margin-top: 40px; /* 确保内容不被固定在顶部的导航栏遮挡 */
-}
-
-/* 媒体查询，针对小屏幕设备 */
-@media (max-width: 768px) {
-    main {
-        padding: 6vw; /* 小屏幕设备使用更大的内边距 */
-        margin-top: 30px; /* 调整上边距以适应小屏幕 */
-    }
-}
-
-/* 媒体查询，针对手机屏幕 */
-@media (max-width: 480px) {
-    main {
-        padding: 8vw; /* 手机屏幕使用更大的内边距 */
-        margin-top: 20px; /* 进一步调整上边距以适应手机屏幕 */
-    }
 }
 
 /* 其他样式保持不变 */
@@ -103,14 +88,22 @@ nav ul li a {
   }
   
 
+
+
+
 /* 底部样式 */
 footer {
     background-color: #55b8e9;
     color: #fff;
     text-align: center;
+    width: 100%;
     padding: 10px 0;
     margin-top: auto;
 }
+
+
+
+
 
 /* 表单样式 */
 form {
