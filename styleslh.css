@@ -311,8 +311,7 @@ input[type="submit"]:hover {
 .info { font-size: 14px; font-weight: 500; line-height: 25px; color: #666; text-align: justify; }
 
 .titlelh { font-size: 60px; font-weight: 800; line-height: 70px; color: #387d9f; text-align: left; }
-.titlelh2 { font-size: 50px; font-weight: 800; line-height: 64px; color: 
-    #000000; text-align: left; }
+.titlelh2 { font-size: 50px; font-weight: 800; line-height: 64px; color: #000000; text-align: left; }
 
 
 @media screen and (orientation:portrait){
