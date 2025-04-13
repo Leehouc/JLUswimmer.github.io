@@ -22,6 +22,28 @@ header {
     z-index: 1000; /* 确保导航栏在其他内容之上 */
 }
 
+@media (max-width: 768px){
+    header {
+        padding: 15px 0; /* 增加内边距，使footer在小屏幕上更明显 */
+        font-size: 14px; /* 减小字体大小，适应小屏幕 */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0; /* 增加内边距，使footer在小屏幕上更明显 */
+        font-size: 12px; /* 减小字体大小，适应小屏幕 */
+    }
+}
+
+
+
+
+
+
+
+
+
 /* 主体样式 */
 main {
     flex: 1;
@@ -99,6 +121,20 @@ footer {
     width: 100%;
     padding: 10px 0;
     margin-top: auto;
+}
+
+@media (max-width: 768px){
+    footer {
+        padding: 15px 0; /* 增加内边距，使footer在小屏幕上更明显 */
+        font-size: 14px; /* 减小字体大小，适应小屏幕 */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 0; /* 增加内边距，使footer在小屏幕上更明显 */
+        font-size: 12px; /* 减小字体大小，适应小屏幕 */
+    }
 }
 
 

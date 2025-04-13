@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻轮播</title>
+    <!-- 引入jQuery库 -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 引入Slick滑块插件的CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- 引入Slick滑块插件的JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    
+    <style>
+        .leeho {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            /* 默认宽度为100%，随设备宽度变化 */
+            max-width: 500px;
+            /* 最大宽度为600px，超过这个宽度不再变化 */
+            margin-left: auto;
+            margin-right: auto;
+            /* 使框居中显示 */
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        /* 媒体查询，当屏幕宽度小于某个值时，例如768px */
+        @media (max-width: 768px) {
+            .leeho {
+                padding: 15px;
+                /* 在小屏幕上减少内边距 */
+                margin-top: 15px;
+                /* 在小屏幕上减少上外边距 */
+                /* 其他样式可以根据需要调整 */
+            }
+        }
+    
+        .img-scale {
+            display: block;
+            overflow: hidden;
+        }
+
+        .img-scale img {
+            display: block;
+            width: 100%;
+            height: auto;
+            -webkit-transition: all 0.4s linear 0s;
+            -moz-transition: all 0.4s linear 0s;
+            -o-transition: all 0.4s linear 0s;
+            transition: all 0.4s linear 0s;
+        }
+
+        .img-scale .img-frame {
+            overflow: hidden;
+        }
+
+        .img-scale .img {
+            /*背景图替换img*/
+            height: 100%;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-color: transparent;
+            background-size: cover;
+            -webkit-transition: all 0.4s linear 0s;
+            -moz-transition: all 0.4s linear 0s;
+            -o-transition: all 0.4s linear 0s;
+            transition: all 0.4s linear 0s;
+        }
+
+        .img-scale .img img {
+            min-height: 100%;
+        }
+
+        .img-scale:hover img {
+            min-height: 100%;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .img-scale:hover .img {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <div class="leeho">
+        <div class="news-slick slick-slider">
+            <div class="img-scale slick-slide">
+
+                <img src="7dbf9ec895fef28d9c6ddbbcc9a682c.jpg">
+                <div class="date1">
+                    <p>2025-03</p>
+                </div>
+                <a class="title" title="">吉林大学阳光组游泳队在进行水下集训</a>
+                <p class="info tt1">2025年</p>
+            </div>
+
+            <div class="img-scale slick-slide">
+                <img src="d1a203d05abadbcc9331918dce98410.jpg">
+                <div class="date1">
+                    <p>03</p>
+                    <p>2025-01</p>
+                </div>
+                <a class="title" title="吉林大学阳光组游泳队训练合影">吉林大学阳光组游泳队训练合影</a>
+                <p class="info tt1"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.news-slick').slick({
+                // Slick滑块配置选项
+                autoplay: true, // 自动播放
+                dots: true, // 显示圆点导航
+                arrows: true, // 显示箭头导航
+                infinite: true, // 无限循环
+                speed: 300, // 滑动速度
+                slidesToShow: 1, // 同时显示的滑块数量
+                slidesToScroll: 1 // 每次滑动的滑块数量
+            });
+        });
+    </script>
+</body>
+
+</html>

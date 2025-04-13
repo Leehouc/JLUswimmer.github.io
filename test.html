@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片轮播</title>
+    <!-- 引入jQuery库 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 引入Slick滑块插件的CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- 引入Slick滑块插件的JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- 自定义CSS样式 -->
+    <style>
+        /* 在这里添加上面提供的Slick滑块CSS样式 */
+        /* ... */
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="slick-slider">
+    <div class="slick-list">
+        <div class="slick-track">
+            <!-- 滑块项 -->
+            <div class="slick-slide"><img src="7dbf9ec895fef28d9c6ddbbcc9a682c.jpg" alt="图片1"></div>
+            <div class="slick-slide"><img src="75dcf48f734e05f2f12237ca974b38d.jpg" alt="图片2"></div>
+            <div class="slick-slide"><img src="d1a203d05abadbcc9331918dce98410.jpg" alt="图片3"></div>
+            
+            
+            <!-- 更多滑块项 -->
+        </div>
+    </div>
+    <!-- 箭头 -->
+    <button class="slick-arrow slick-prev">Previous</button>
+    <button class="slick-arrow slick-next">Next</button>
+    <!-- 圆点 -->
+    <ul class="slick-dots">
+        <li class="slick-active"><button>1</button></li>
+        <li><button>2</button></li>
+        <li><button>3</button></li>
+        <!-- 更多圆点 -->
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            // Slick滑块配置选项
+            autoplay: true, // 自动播放
+            dots: true, // 显示圆点导航
+            arrows: true, // 显示箭头导航
+            infinite: true, // 无限循环
+            speed: 300, // 滑动速度
+            slidesToShow: 1, // 同时显示的滑块数量
+            slidesToScroll: 1 // 每次滑动的滑块数量
+        });
+    });
+</script>
+
+</body>
+</html>
