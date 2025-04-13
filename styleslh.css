@@ -326,6 +326,6 @@ input[type="submit"]:hover {
     .leeho {
         float: left;
         width: 45%; /* 在横屏模式下，宽度为100% */
-        max-width: 45%; /* 最大宽度为100% */
+        max-width: 100%; /* 最大宽度为100% */
     }
 }
