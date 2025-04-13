@@ -86,7 +86,13 @@ nav ul li a {
   }
   
 
+.leeho-landscape {
+    max-width: 500px; /* 横屏时最大宽度为500px */
+}
 
+.leeho-portrait {
+    max-width: none; /* 竖屏时不设置最大宽度 */
+}
 
 
 /* 底部样式 */
