@@ -103,19 +103,6 @@ footer {
     margin-top: auto;
 }
 
-@media screen and (orientation:portrait){
-    .leeho {
-        width: 95%; /* 在竖屏模式下，宽度为100% */
-        max-width: 100%; /* 最大宽度为100% */
-    }
-}
-@media screen and (orientation:landscape){
-    .leeho {
-        width: 60%; /* 在横屏模式下，宽度为100% */
-        max-width: 100%; /* 最大宽度为100% */
-    }
-}
-
 
 
 /* 表单样式 */
@@ -323,3 +310,18 @@ input[type="submit"]:hover {
 .title:hover { color: #015abe; }
 
 .info { font-size: 14px; font-weight: 500; line-height: 25px; color: #666; text-align: justify; }
+
+
+
+@media screen and (orientation:portrait){
+    .leeho {
+        width: 95%; /* 在竖屏模式下，宽度为100% */
+        max-width: 95%; /* 最大宽度为100% */
+    }
+}
+@media screen and (orientation:landscape){
+    .leeho {
+        width: 60%; /* 在横屏模式下，宽度为100% */
+        max-width: 60%; /* 最大宽度为100% */
+    }
+}
