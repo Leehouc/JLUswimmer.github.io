@@ -178,7 +178,7 @@ input[type="submit"]:hover {
 
 .img-scale img {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
     -webkit-transition: all 0.4s linear 0s;
     -moz-transition: all 0.4s linear 0s;
