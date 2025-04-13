@@ -325,7 +325,7 @@ input[type="submit"]:hover {
 }
 @media screen and (orientation:landscape){
     .leeho {
-        
+        float: left;
         width: 49%; /* 在横屏模式下，宽度为100% */
         max-width: 49%; /* 最大宽度为100% */
     }
