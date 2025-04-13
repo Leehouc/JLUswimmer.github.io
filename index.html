@@ -18,7 +18,7 @@
 </head>
 
 <body>
-   <!-- <header>
+    <header>
         <nav>
             <ul>
                 <li><a href="index.html">首页t1</a></li>
@@ -26,9 +26,9 @@
                 <li><a href="er.html">兼容测试</a></li>
                 <!--<li><a href="post_topic.html">发表话题</a></li>
                 <li><a href="reply_topic.html">回复话题</a></li>-->
-           <!-- </ul>
+     </ul>
         </nav>
-    </header>-->
+    </header>
     <main>
         <section class="welcome">
             <h1>欢迎来到吉林大学吉大泳协！</h1>
@@ -90,31 +90,54 @@
             <!-- 这里可以动态加载最新话题的内容 -->
         </section>
 
-        
-<p>屏幕宽度: <span id="screenWidth"></span> pixels</p>
-<p>屏幕高度: <span id="screenHeight"></span> pixels</p>
 
-<script>
-  function displayScreenWidth() {
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    document.getElementById('screenWidth').textContent = width;
-    document.getElementById('screenHeight').textContent = height;
-}
 
-  // 当页面加载完成时显示屏幕宽度
-  window.onload = displayScreenWidth;
-
-  // 当窗口大小改变时更新屏幕宽度
-  window.onresize = displayScreenWidth;
-</script>
 
 
 
     </main>
-    <!--<footer>
+    <footer>
         <p>&copy; 2025 吉大泳协</p>
-    </footer>-->
+            <p>屏幕宽度: <span id="screenWidth"></span> pxl  ,屏幕高度: <span id="screenHeight"></span> pxl</p>
+
+    </footer>
+
+    <script>
+        function adjustMaxWidth() {
+            var element = document.querySelector('.leeho');
+            if (window.innerHeight > window.innerWidth) {
+                // 竖屏
+                element.classList.remove('leeho-landscape');
+                element.classList.add('leeho-portrait');
+            } else {
+                // 横屏
+                element.classList.remove('leeho-portrait');
+                element.classList.add('leeho-landscape');
+            }
+        }
+
+        // 当页面加载完成时调整宽度
+        window.onload = adjustMaxWidth;
+
+        // 当窗口大小改变时调整宽度
+        window.onresize = adjustMaxWidth;
+    </script>
+
+    <script>
+        function displayScreenWidth() {
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            document.getElementById('screenWidth').textContent = width;
+            document.getElementById('screenHeight').textContent = height;
+        }
+
+        // 当页面加载完成时显示屏幕宽度
+        window.onload = displayScreenWidth;
+
+        // 当窗口大小改变时更新屏幕宽度
+        window.onresize = displayScreenWidth;
+    </script>
+
     <script>
         $(document).ready(function () {
             $('.news-slick').slick({
