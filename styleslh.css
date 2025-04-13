@@ -318,6 +318,11 @@ input[type="submit"]:hover {
         width: 95%; /* 在竖屏模式下，宽度为100% */
         max-width: 95%; /* 最大宽度为100% */
     }
+    .title { font-size: 30px; font-weight: 500; line-height: 30px; color: #000000; text-align: left; }
+
+    .info { font-size: 24px; font-weight: 500; line-height: 25px; color: #666; text-align: justify; }
+
+
 }
 @media screen and (orientation:landscape){
     .leeho {
