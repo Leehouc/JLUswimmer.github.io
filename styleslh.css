@@ -311,6 +311,7 @@ input[type="submit"]:hover {
     #000000; text-align: left; }
     .title:hover { color: #015abe; }
 .info { font-size: 30px; font-weight: 500; line-height: 26px; color: #666; text-align: justify; }
+.infote { font-size: 30px; font-weight: 500; line-height: 50px; color: #000000; text-align: justify; }
 
 .titlelh { font-size: 60px; font-weight: 800; line-height: 70px; color: #387d9f; text-align: left; }
 .titlelhll { font-size: 50px; font-weight: 800; line-height: 60px; color: #000000; text-align: left; }
@@ -327,7 +328,7 @@ input[type="submit"]:hover {
 @media screen and (orientation:landscape){
     .leeho {
         float: left;
-        width: 46%; /* 在横屏模式下，宽度为100% */
-        max-width: 46%; /* 最大宽度为100% */
+        width: 47%; /* 在横屏模式下，宽度为100% */
+        max-width: 47%; /* 最大宽度为100% */
     }
 }
