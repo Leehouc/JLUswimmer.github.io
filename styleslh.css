@@ -39,7 +39,7 @@ main {
     margin: 0;
     width: 100%;
     background: linear-gradient(45deg, #c9fbf9, #fbd0ed);
-    margin-top: 40px;
+    margin-top: 50px;
     /* 确保内容不被固定在顶部的导航栏遮挡 */
 }
 
@@ -58,6 +58,9 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
     color: #fff;
     text-decoration: none;
 }
@@ -373,6 +376,14 @@ input[type="submit"]:hover {
     color: #000000;
 
     text-align: center;
+}
+
+.daohang {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: justify;
 }
 
 
