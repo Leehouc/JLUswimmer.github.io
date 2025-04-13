@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>吉大泳协 - 首页</title>
     <link rel="stylesheet" href="styleslh.css"> <!-- 链接到统一的CSS文件 -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 引入Slick滑块插件的CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- 引入Slick滑块插件的JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,28 +31,86 @@
     </header>
     <main>
         <section class="welcome">
-            <h1>欢迎来到吉大泳协！</h1>
-            <p>哈哈哈</p>
+            <h1>欢迎来到吉林大学吉大泳协！</h1>
+            <p></p>
+        </section>
+
+        <section class="leeho">
+            <h2>精彩瞬间</h2>
+            <div class="news-slick slick-slider">
+                <div class="img-scale slick-slide">
+
+                    <img src="7dbf9ec895fef28d9c6ddbbcc9a682c.jpg">
+                    <div class="date1">
+                        <p>2025-03</p>
+                    </div>
+                    <a class="title" title="">吉林大学阳光组游泳队在进行水下集训</a>
+                    <p class="info tt1">2025年上半学期开展东第一次训练</p>
+                </div>
+
+                <div class="img-scale slick-slide">
+                    <img src="d1a203d05abadbcc9331918dce98410.jpg">
+                    <div class="date1">
+                        <p>2025-03</p>
+                    </div>
+                    <a class="title" title="吉林大学阳光组游泳队训练合影">吉林大学阳光组游泳队训练合影</a>
+                    <p class="info tt1">游泳队成员训练后合影留念</p>
+                </div>
+
+                <div class="img-scale slick-slide">
+                    <img src="ff629b216871ad8061048295413d442.jpg">
+                    <div class="date1">
+                        <p>2025-04-13</p>
+                    </div>
+                    <a class="title" title="协会组织参与百团纳新活动">协会组织参与百团纳新活动（1）</a>
+                    <p class="info tt1">协会核心成员在百团纳新活动摊位上的合影</p>
+                </div>
+
+                <div class="img-scale slick-slide">
+                    <img src="679b1bf3c8c41f89991c610632bff56.jpg">
+                    <div class="date1">
+                        <p>2025-04-13</p>
+                    </div>
+                    <a class="title" title="协会组织参与百团纳新活动">协会组织参与百团纳新活动（2）</a>
+                    <p class="info tt1">协会会长来到活动现场进行布置工作</p>
+                </div>
+
+
+            </div>
+
+
         </section>
 
 
 
-        <section class="latest-topics">
+
+
+        <section class="leeho">
             <h2>最新话题</h2>
             <!-- 这里可以动态加载最新话题的内容 -->
         </section>
 
 
-
-        <div class="image-carousel">
-            <img src="7dbf9ec895fef28d9c6ddbbcc9a682c.jpg" alt="Image 1">
-            <img src="75dcf48f734e05f2f12237ca974b38d.jpg" alt="Image 2">
-            <img src="d1a203d05abadbcc9331918dce98410.jpg" alt="Image 3">
-            <!-- 更多图片 -->
-        </div>
     </main>
     <footer>
         <p>&copy; 2025 吉大泳协</p>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $('.news-slick').slick({
+                // Slick滑块配置选项
+                autoplay: true, // 自动播放
+                dots: true, // 显示圆点导航
+                arrows: true, // 显示箭头导航
+                infinite: true, // 无限循环
+                speed: 300, // 滑动速度
+                slidesToShow: 1, // 同时显示的滑块数量
+                slidesToScroll: 1 // 每次滑动的滑块数量
+            });
+
+
+        });
+    </script>
 </body>
+
 </html>
